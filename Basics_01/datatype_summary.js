@@ -33,3 +33,24 @@ console.log(typeof heros)//object
 console.log(typeof anotherid)//symbol
 //is javascript is dynamically or staticly typed language?
 //JavaScript is a dynamically typed language, but TypeScript is a statically typed language. Longer answer: In dynamically typed languages all type checks are performed in a runtime, only when your program is executing
+
+/**************stack and heap memory***********************/
+//stack memory(primitive datatypes use stack memory)
+//heap memory(non primitive datatypes use heap memory)
+let myyoutubename="sanchitasharma" //get stored in stack memory
+let anothername=myyoutubename
+anothername="captainmarvel"
+console.log(myyoutubename)//sanchitasharma
+console.log(anothername);//captainmarvel
+//copy of the value is changed not original one is changed in stack
+
+let user1={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let user2=user1
+user2.email="annaya@google.com"
+console.log(user1.email)//annaya@google.com
+console.log(user1.email)//annaya@google.com
+//stack ke ander  jo bhi cheez lenge uska ek copy milta hai actual value change nhi hota hai.
+//agr aap heap ke ander kuch value rakhte hai toh uska reference milta hai,mtlb jo bhi changes hoti hai wo actual data pr hoti hai.not on copy
