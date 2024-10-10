@@ -1,0 +1,26 @@
+console.log(2>1);
+console.log(2>=1);
+console.log(2<1);
+console.log(2==1);
+console.log(2!=1);
+//output:
+//true
+//true
+//false
+//false
+//true
+console.log("2">1);//true
+console.log("02">1);//true
+
+//not prefered to use code should be clean ,not complicated with these comparisons.
+console.log(null>0);//false   Nan or 0
+console.log(null==0);//false
+console.log(null>=0);//true
+
+console.log(undefined==0);
+console.log(undefined>0);
+console.log(undefined<0);
+
+
+
+
